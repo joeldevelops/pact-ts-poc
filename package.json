@@ -1,0 +1,36 @@
+{
+  "name": "pact-poc",
+  "version": "1.0.0",
+  "description": "This project is an example of a consumer-provider pair in pact.io and pactfile generation",
+  "main": "main.ts",
+  "scripts": {
+    "init": "npm i && npm run init:consumer && npm run init:provider",
+    "init:consumer": "cd ./consumer && npm i",
+    "init:provider": "cd ./provider && npm i",
+    "start": "ts-node .",
+    "start:consumer": "ts-node ./start-consumer.ts",
+    "start:provider": "ts-node ./start-provider.ts",
+    "pact:consumer": "cd ./consumer && npm run test:pact",
+    "pact:publish": "ts-node ./publish",
+    "pact:provider": "cd ./provider && npm run test:pact",
+    "pact:all": "npm run pact:consumer && npm run pact:publish && npm run pact:provider"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MerrillCorporation/pact-typescript-poc.git"
+  },
+  "author": "Joel Milligan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MerrillCorporation/pact-typescript-poc/issues"
+  },
+  "homepage": "https://github.com/MerrillCorporation/pact-typescript-poc#readme",
+  "devDependencies": {
+    "@pact-foundation/pact-node": "^8.2.0",
+    "@types/node": "^11.13.7"
+  },
+  "dependencies": {
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  }
+}
