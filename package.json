@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/MerrillCorporation/pact-typescript-poc#readme",
   "devDependencies": {
-    "@pact-foundation/pact-node": "^8.2.0",
+    "@pact-foundation/pact-node": "^10.17.7",
     "@types/node": "^11.13.7"
   },
   "dependencies": {
